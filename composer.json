@@ -11,7 +11,6 @@
     "require": {
         "nikic/php-parser": "^4.11",		
         "ext-json": "*",
-        "ajthinking/archetype": "^1.0.0",
         "composer/composer": "^1.10.22 || ^2.0.13",
         "facade/ignition-contracts": "^1.0",
         "guzzlehttp/guzzle": "^6.3 || ^7.0",
