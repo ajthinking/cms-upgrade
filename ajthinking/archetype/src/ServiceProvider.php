@@ -15,15 +15,15 @@ class ServiceProvider extends BaseServiceProvider
 
     public function register()
     {
-        $this->registerFacades();
-        $this->registerCommands();
-        $this->mergeConfigFrom(__DIR__.'/config/archetype.php', 'archetype');
+        // $this->registerFacades();
+        // $this->registerCommands();
+        // $this->mergeConfigFrom(__DIR__.'/config/archetype.php', 'archetype');
     }
 
     public function boot()
     {
-        $this->bootStrMacros();
-        $this->publishConfig();
+        // $this->bootStrMacros();
+        // $this->publishConfig();
     }
 
     protected function registerFacades()
