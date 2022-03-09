@@ -89,9 +89,9 @@ class MakeWidget extends GeneratorCommand
         $widgetClassValue = $factory->classConstFetch('Widgets\\'.$this->getNameInput(), 'class');
 
         try {
-            PHPFile::load("addons/{$this->package}/src/ServiceProvider.php")
-                    ->add()->protected()->property('widgets', $widgetClassValue)
-                    ->save();
+            // PHPFile::load("addons/{$this->package}/src/ServiceProvider.php")
+            //         ->add()->protected()->property('widgets', $widgetClassValue)
+            //         ->save();
         } catch (\Exception $e) {
             $this->info("Don't forget to register the Widget class in your addon's service provider.");
         }

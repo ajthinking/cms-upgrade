@@ -9,8 +9,8 @@
     ],
     "license": "proprietary",
     "require": {
+        "nikic/php-parser": "^4.11",		
         "ext-json": "*",
-        "ajthinking/archetype": "^0.2.5",
         "composer/composer": "^1.10.22 || ^2.0.13",
         "facade/ignition-contracts": "^1.0",
         "guzzlehttp/guzzle": "^6.3 || ^7.0",
@@ -61,7 +61,8 @@
         ],
         "laravel": {
             "providers": [
-                "Statamic\\Providers\\StatamicServiceProvider"
+                "Statamic\\Providers\\StatamicServiceProvider",
+				"Archetype\\ServiceProvider"
             ],
             "aliases": {
                 "Statamic": "Statamic\\Statamic"
@@ -70,7 +71,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Statamic\\": "src/"
+            "Statamic\\": "src/",
+			"Archetype\\": "ajthinking/archetype/src"
         },
         "files": [
             "src/helpers.php",
