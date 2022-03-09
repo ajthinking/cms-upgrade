@@ -64,9 +64,8 @@ class MakeAction extends GeneratorCommand
         $actionClassValue = $factory->classConstFetch('Actions\\'.$this->getNameInput(), 'class');
 
         try {
-			PHPFile::load("addons/{$this->package}/src/ServiceProvider.php");
-            // PHPFile::load("addons/{$this->package}/src/ServiceProvider.php")
-            //         ->add()->protected()->property('actions', $actionClassValue)
+            PHPFile::load("addons/{$this->package}/src/ServiceProvider.php")
+                    ->add()->protected()->property('actions', $actionClassValue);
             //         ->save();
         } catch (\Exception $e) {
             $this->comment("Don't forget to register the Action class in your addon's service provider.");
