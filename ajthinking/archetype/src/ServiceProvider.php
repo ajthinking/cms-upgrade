@@ -22,7 +22,7 @@ class ServiceProvider extends BaseServiceProvider
 
     public function boot()
     {
-        $this->bootStrMacros();
+        $this->bootStrMacros(); 
         $this->publishConfig();
     }
 
