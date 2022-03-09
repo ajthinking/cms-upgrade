@@ -15,7 +15,7 @@ class ServiceProvider extends BaseServiceProvider
 
     public function register()
     {
-        // $this->registerFacades();
+        $this->registerFacades();
         // $this->registerCommands();
         // $this->mergeConfigFrom(__DIR__.'/config/archetype.php', 'archetype');
     }
