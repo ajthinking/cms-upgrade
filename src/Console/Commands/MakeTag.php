@@ -64,9 +64,9 @@ class MakeTag extends GeneratorCommand
         $tagsClassValue = $factory->classConstFetch('Tags\\'.$this->getNameInput(), 'class');
 
         try {
-            PHPFile::load("addons/{$this->package}/src/ServiceProvider.php")
-                    ->add()->protected()->property('tags', $tagsClassValue)
-                    ->save();
+            // PHPFile::load("addons/{$this->package}/src/ServiceProvider.php")
+            //         ->add()->protected()->property('tags', $tagsClassValue)
+            //         ->save();
         } catch (\Exception $e) {
             $this->comment("Don't forget to register the Tag class in your addon's service provider.");
         }
